@@ -141,6 +141,11 @@ Vue.component("contacto-page", {
 
       console.log("Payload listo para Apps Script:", this.lastPayload);
       this.submitted = true;
+    },
+
+    openExternalLink(url) {
+      if (!url) return;
+      window.open(url, "_blank", "noopener,noreferrer");
     }
   },
 
@@ -190,7 +195,7 @@ Vue.component("contacto-page", {
                 type="button"
                 class="w-full inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-200
                       bg-pink-50/80 border-pink-200 text-pink-700 hover:bg-pink-100/90"
-                @click.prevent
+                @click="openExternalLink('https://www.instagram.com/for90s_com?igsh=MTU2YWczeTgwdXBtbQ==')"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
                   <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.88 1.12a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z"/>
@@ -203,7 +208,7 @@ Vue.component("contacto-page", {
                 type="button"
                 class="w-full inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-200
                       bg-blue-50/80 border-blue-200 text-blue-700 hover:bg-blue-100/90"
-                @click.prevent
+                @click="openExternalLink('https://www.facebook.com/share/17RXxyGqte/')"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
                   <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H16.8V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H8v3h2.7v8h2.8Z"/>
@@ -212,16 +217,15 @@ Vue.component("contacto-page", {
               </button>
 
               <!-- Workana -->
-              <a
-                href="https://www.workana.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
                 class="w-full inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold transition-all duration-200
                       bg-violet-50/90 border-violet-300 text-violet-700 hover:bg-violet-100"
+                @click="openExternalLink('https://www.workana.com')"
               >
                 <span class="material-icons text-base">work</span>
                 Workana
-              </a>
+              </button>
             </div>
           </div>
 
