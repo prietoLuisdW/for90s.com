@@ -101,43 +101,44 @@
 
         </div>
 
-        <div class="flex items-center gap-3 md:gap-4">
-          <!-- Theme switch -->
-          <select
-            v-model="currentTheme"
-            @change="applyTheme"
-            class="border rounded-lg px-3 py-2 text-sm focus:outline-none transition-colors duration-200"
-            :class="themeClasses.select"
-          >
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-            <option value="graphite">Graphite</option>
-          </select>
+          <div class="flex items-center gap-3 md:gap-4">
+            <select
+              v-model="currentTheme"
+              @change="applyTheme"
+              class="border rounded-lg px-3 py-2 text-sm focus:outline-none transition-colors duration-200"
+              :class="themeClasses.select"
+            >
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+              <option value="graphite">Graphite</option>
+            </select>
 
-          <!-- Instagram -->
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg p-2 border transition-colors duration-200"
-            :class="[themeClasses.button, themeClasses.buttonHover]"
-            aria-label="Instagram"
-          >
-            <span class="material-icons">photo_camera</span>
-          </a>
+            <!-- Instagram -->
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-lg p-2 border transition-colors duration-200"
+              :class="[themeClasses.button, themeClasses.buttonHover]"
+              aria-label="Instagram"
+              @click.prevent
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.88 1.12a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z"/>
+              </svg>
+            </button>
 
-          <!-- WhatsApp -->
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg p-2 border transition-colors duration-200"
-            :class="[themeClasses.button, themeClasses.buttonHover]"
-            aria-label="WhatsApp"
-          >
-            <span class="material-icons">chat</span>
-          </a>
-        </div>
+            <!-- Facebook -->
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-lg p-2 border transition-colors duration-200"
+              :class="[themeClasses.button, themeClasses.buttonHover]"
+              aria-label="Facebook"
+              @click.prevent
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H16.8V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H8v3h2.7v8h2.8Z"/>
+              </svg>
+            </button>
+          </div>
       </header>
 
       <!-- Main content -->
@@ -159,6 +160,7 @@
   <!-- App files -->
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/location-data.js"></script>
   <script src="./assets/js/api.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>

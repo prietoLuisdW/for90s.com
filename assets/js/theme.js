@@ -13,7 +13,11 @@ const THEMES = {
     inactive: "text-slate-300 hover:bg-slate-700/70 hover:text-white",
     select: "bg-slate-800 border-slate-700 text-slate-200",
     ctaPrimary: "bg-sky-500 border-sky-500 text-white hover:bg-sky-400",
-    ctaSecondary: "bg-transparent border-slate-600 text-slate-200 hover:bg-slate-700"
+    ctaSecondary: "bg-transparent border-slate-600 text-slate-200 hover:bg-slate-700",
+    input: "bg-slate-900 border-slate-700 text-slate-200 placeholder-slate-400",
+    disabledButton: "bg-slate-700 border-slate-700 text-slate-400 cursor-not-allowed opacity-70",
+    input: "bg-slate-900 border-slate-700 text-slate-200 placeholder-slate-400",
+    disabledButton: "bg-slate-700 border-slate-700 text-slate-400 cursor-not-allowed opacity-70"
   },
 
   light: {
@@ -30,7 +34,11 @@ const THEMES = {
     inactive: "text-slate-700 hover:bg-slate-100 hover:text-slate-900",
     select: "bg-white border-slate-300 text-slate-900",
     ctaPrimary: "bg-blue-600 border-blue-600 text-white hover:bg-blue-500",
-    ctaSecondary: "bg-transparent border-slate-300 text-slate-900 hover:bg-slate-100"
+    ctaSecondary: "bg-transparent border-slate-300 text-slate-900 hover:bg-slate-100",
+    input: "bg-white border-slate-300 text-slate-900 placeholder-slate-400",
+    disabledButton: "bg-slate-200 border-slate-200 text-slate-500 cursor-not-allowed opacity-80",
+    input: "bg-white border-slate-300 text-slate-900 placeholder-slate-400",
+    disabledButton: "bg-slate-200 border-slate-200 text-slate-500 cursor-not-allowed opacity-80"
   },
 
   graphite: {
@@ -47,7 +55,11 @@ const THEMES = {
     inactive: "text-slate-300 hover:bg-[#243041] hover:text-white",
     select: "bg-[#1b2433] border-slate-700 text-slate-100",
     ctaPrimary: "bg-blue-500 border-blue-500 text-white hover:bg-blue-400",
-    ctaSecondary: "bg-transparent border-slate-600 text-slate-100 hover:bg-[#243041]"
+    ctaSecondary: "bg-transparent border-slate-600 text-slate-100 hover:bg-[#243041]",
+    input: "bg-[#111827] border-slate-700 text-slate-100 placeholder-slate-400",
+    disabledButton: "bg-[#243041] border-slate-700 text-slate-400 cursor-not-allowed opacity-70",
+    input: "bg-[#111827] border-slate-700 text-slate-100 placeholder-slate-400",
+    disabledButton: "bg-[#243041] border-slate-700 text-slate-400 cursor-not-allowed opacity-70",
   }
 };
 
